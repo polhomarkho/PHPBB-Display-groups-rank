@@ -1,0 +1,8 @@
+{% for rank in extra_ranks %}
+    {% if rank.EXTRA_RANK_IMG %}
+        <dt>&nbsp;</dt>
+        <dd style="text-align: center;">
+            {{ rank.EXTRA_RANK_IMG }}
+        </dd>
+    {% endif %}
+{% endfor %}

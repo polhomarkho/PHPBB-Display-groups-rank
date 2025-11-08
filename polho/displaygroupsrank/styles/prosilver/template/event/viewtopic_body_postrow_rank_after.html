@@ -1,0 +1,9 @@
+{% if postrow.extra_ranks %}
+	<dd class="profile-rank">
+		{% for rank in postrow.extra_ranks %}
+            {% if rank.EXTRA_RANK_IMG %}
+                {{ rank.EXTRA_RANK_IMG }}
+            {% endif %}
+        {% endfor %}
+	</dd>
+{% endif %}

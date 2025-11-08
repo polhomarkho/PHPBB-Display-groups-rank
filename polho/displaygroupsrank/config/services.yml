@@ -1,0 +1,11 @@
+services:
+    polho.displaygroupsrank.event:
+        class: 'polho\displaygroupsrank\event\listener'
+        arguments:
+            - '@template'
+            - '@config'
+            - '@dbal.conn'
+            - '@path_helper'
+            - '@group_helper'
+        tags:
+            - { name: 'event.listener' }
